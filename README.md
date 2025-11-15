@@ -50,13 +50,15 @@ Your custom `ft_printf` supports the following format specifiers:
 
 ## 📁 Project Structure
 
-* `src/` contains all core functions:
-
-  * parsing
-  * formatting handlers
-  * printing utilities
-* `includes/` contains `ft_printf.h`
-* `Makefile` handles compilation and cleaning
+* `Makefile` – Handles compilation, cleaning, and rebuilding the library.
+* `ft_printf.c` – Core function that parses the format string and calls the appropriate handlers.
+* `ft_putchar.c` – Prints a single character to standard output.
+* `ft_putstr.c` – Prints a string to standard output.
+* `ft_putnbr.c` – Prints a signed integer.
+* `ft_putunsigned.c` – Prints an unsigned integer.
+* `ft_puthex.c` – Prints a number in hexadecimal format (lowercase and uppercase).
+* `ft_putaddress.c` – Prints a pointer's memory address in hexadecimal format.
+* `ft_printf.h` – Header file containing function prototypes and required includes.
 
 ---
 
@@ -114,7 +116,7 @@ gcc main.c -L. -lftprintf
 
 ## 👤 Author
 
-**Redouane Hssayn (Finn)**
+**Redouane Hssayn (Finn)/(rhssayn)**
 Student at **1337 - 42 Network**
 
 If this project helps you, feel free to ⭐ the repository on GitHub!
